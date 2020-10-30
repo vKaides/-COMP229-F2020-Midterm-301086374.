@@ -52,8 +52,8 @@
                   <tr class="d-flex">
                       <% if (typeof displayName == 'string' && displayName){ %>
                       <td class="text-center col-1"><%= books[count].name %></td>
-                      <td class="text-center col-1"><%= Books[count].author %></td>
-                      <td class="text-center col-1"><%= Books[count].Gerne %></td>
+                      <td class="text-center col-1"><%= books[count].author %></td>
+                      <td class="text-center col-1"><%= books[count].Gerne %></td>
                       <td class="text-center col-1"><%= books[count].price %></td>
                       <td class="text-center col-2">
                       <a href="/books/edit/<%= books[count]._id %>" class="btn btn-primary btn-small">
