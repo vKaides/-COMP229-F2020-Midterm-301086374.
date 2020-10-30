@@ -48,26 +48,26 @@
       </div>
   </div>
                 <!-- Template Row -->
-                <% for (let count = 0; count < BookList.length; count++) { %>
+                <% for (let count = 0; count < books.length; count++) { %>
                   <tr class="d-flex">
                       <% if (typeof displayName == 'string' && displayName){ %>
-                      <td class="text-center col-1"><%= BookList[count].name %></td>
-                      <td class="text-center col-1"><%= BookList[count].author %></td>
-                      <td class="text-center col-1"><%= BookList[count].Gerne %></td>
-                      <td class="text-center col-1"><%= BookList[count].price %></td>
+                      <td class="text-center col-1"><%= books[count].name %></td>
+                      <td class="text-center col-1"><%= Books[count].author %></td>
+                      <td class="text-center col-1"><%= Books[count].Gerne %></td>
+                      <td class="text-center col-1"><%= books[count].price %></td>
                       <td class="text-center col-2">
-                      <a href="/books/edit/<%= BookList[count]._id %>" class="btn btn-primary btn-small">
+                      <a href="/books/edit/<%= books[count]._id %>" class="btn btn-primary btn-small">
                       <i class="fas fa-pencil-alt"></i>Edit</a>
                       </td>
                       <td class="text-center col-2">
-                      <a href="/books/delete/<%= BookList[count]._id %>" class="btn btn-danger btn-small">
+                      <a href="/books/delete/<%= books[count]._id %>" class="btn btn-danger btn-small">
                       <i class="fas fa-trash-alt"></i>Delete</a>
                       </td>
                   <% }else{%>
-                      <td class="text-center col-1"><%= BookList[count].name %></td>
-                      <td class="text-center col-1"><%= BookList[count].author %></td>
-                      <td class="text-center col-1"><%= BookList[count].Gerne %></td>
-                      <td class="text-center col-1"><%= BookList[count].price %></td>
+                      <td class="text-center col-1"><%= books[count].name %></td>
+                      <td class="text-center col-1"><%= books[count].author %></td>
+                      <td class="text-center col-1"><%= books[count].Gerne %></td>
+                      <td class="text-center col-1"><%= books[count].price %></td>
                       <% } %>
                   </tr>
                       <% } %>
